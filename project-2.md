@@ -195,7 +195,7 @@ While Apache embeds the PHP interpreter in each request, Nginx requires an exter
 
   `mysql -u example_user -p`
 
-- change into `example_database using the command below:
+- change into `example_database` using the command below:
   `mysql> SHOW DATABASES;`
 
 - Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
