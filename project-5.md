@@ -1,4 +1,4 @@
-## CLIENT-SERVER ARCHITECTURE WITH MYSQL
+## CLIENT-SERVER ARCHITECTURE WITH MYSQL USING AWS EC2 INSTANCES
 Client-Server architecture describe the relationship between two or more connectecd computers sharing data across the network. In a client-server architecture, the client is the computer that requests for data, while the one that processes the request is known as the server.
 
 To demonstrate, following the instructions below carefully.
