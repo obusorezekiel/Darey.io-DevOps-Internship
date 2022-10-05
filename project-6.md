@@ -91,8 +91,7 @@ You can see the output below
 
 - The UUID of the device will be used to update the /etc/fstab file;
 
-- Update /etc/fstab using the UUID generated for each partion respectively see example below:
-
+- Update /etc/fstab using the UUID generated for each partion respectively
   
 - Test the configuration and reload the daemon
 
@@ -101,7 +100,6 @@ You can see the output below
       sudo systemctl daemon-reload
   ```
   
-- Verify your setup by running df -h, output must look like this:
 
 
 ### Step 2 — Prepare the Database Server
