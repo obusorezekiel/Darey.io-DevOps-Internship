@@ -37,15 +37,15 @@ Again refer to step 0 of [project-one](https://github.com/uzukwujp/Darey.io-Inte
 
 - Use vgcreate utility to add all 3 PVs to a volume group (VG). Name the VG webdata-vg
 
-  `sudo vgcreate webdata-vg /dev/xvdh1 /dev/xvdg1 /dev/xvdf1`
+  `sudo vgcreate vg-webdata /dev/xvdh1 /dev/xvdg1 /dev/xvdf1`
   
 - Verify that your VG has been created successfully by running *sudo vgs*
 
 - Use lvcreate utility to create 2 logical volumes. apps-lv (Use half of the PV size), and logs-lv Use the remaining space of the PV size. NOTE: apps-lv will be used     to store data for the Website while, logs-lv will be used to store data for logs. 
 
   ```
-      sudo lvcreate -n apps-lv -L 14G webdata-vg
-      sudo lvcreate -n logs-lv -L 14G webdata-vg
+      sudo lvcreate -n apps-lv -L 14G vg-webdata
+      sudo lvcreate -n logs-lv -L 14G vg-webdata
   ```
 
 - Verify that your Logical Volume has been created successfully by running *sudo lvs*
@@ -57,8 +57,8 @@ You can see the output below
 - Use mkfs.ext4 to format the logical volumes with ext4 filesystem
 
   ```
-      sudo mkfs -t ext4 /dev/webdata-vg/apps-lv
-      sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
+      sudo mkfs -t ext4 /dev/vg-webdata/apps-lv
+      sudo mkfs -t ext4 /dev/vg-webdata/logs-lv
   ```
   
 - Create /var/www/html directory to store website files
@@ -71,7 +71,7 @@ You can see the output below
   
 - Mount /var/www/html on apps-lv logical volume
 
-  `sudo mount /dev/webdata-vg/apps-lv /var/www/html/`
+  `sudo mount /dev/vg-webdata/apps-lv /var/www/html/`
   
   
 - Use rsync utility to backup all the files in the log directory /var/log into /home/recovery/logs (This is required before mounting the file system)
@@ -81,7 +81,7 @@ You can see the output below
 - Mount /var/log on logs-lv logical volume. (Note that all the existing data on /var/log will be deleted. That is why step 15 above is very
   important)
   
-  `sudo mount /dev/webdata-vg/logs-lv /var/log`
+  `sudo mount /dev/vg-webdata/logs-lv /var/log`
   
 - Restore log files back into /var/log directory
 
