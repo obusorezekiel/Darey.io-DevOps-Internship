@@ -1,6 +1,6 @@
 ## LOAD BALANCER SOLUTION WITH APACHE
 
-In project seven, We extended our 3- tier architecture for website by adding an NFS server. NFS holds static files shared across the webserver. This architecture makes our webservers stateless. However In our previous architecture, it implies we wll need to access each webserver directly from its public IP. This is not a good use of our resources because one server may unintentionally process all the request. 
+In project seven, We extended our 3- tier architecture for website by adding an NFS server. This architecture makes our webservers stateless. However, it implies we wll need to access each webserver directly from its public IP. This is not a good use of our resources because one server may unintentionally process all the request. 
 
 To solve this problem, we need a single point of entry which routes traffic accross our webservers. 
 
