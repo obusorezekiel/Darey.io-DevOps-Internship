@@ -116,9 +116,7 @@ Project fifteen is all about implementing the infrastructure architecture above 
     
     - Configure Userdata to update yum package repository and install nginx
 
-
-     ![launch template](https://user-images.githubusercontent.com/52359007/170269926-5850eb00-813c-43c0-8f3a-ac2b1a9149ae.PNG) 
-     
+![Screenshot from 2022-10-28 02-37-51](https://user-images.githubusercontent.com/23356682/198572729-98d06357-a34a-4e3d-b3ec-55d174ef6f69.png)
      
   - Configure Target Groups
 
@@ -133,8 +131,8 @@ Project fifteen is all about implementing the infrastructure architecture above 
     - Ensure that health check passes for the target group
 
   
+  ![Screenshot from 2022-10-28 01-03-20](https://user-images.githubusercontent.com/23356682/198572888-2ed74f99-7e3e-425a-8907-261cb9ed47b4.png)
 
-   ![target-group](https://user-images.githubusercontent.com/52359007/170270960-cebc2dd1-0323-48a2-94f5-d445e8d7230d.PNG)
    
    
   - Configure Autoscaling For Nginx
@@ -161,8 +159,8 @@ Project fifteen is all about implementing the infrastructure architecture above 
     - Ensure there is an SNS topic to send scaling notifications
 
  
-   ![Autoscaling group](https://user-images.githubusercontent.com/52359007/170272396-1abd719e-b9ea-49f1-b714-112408db6f86.PNG) 
-   
+![Screenshot from 2022-10-28 03-31-32](https://user-images.githubusercontent.com/23356682/198573198-d6fa713e-8183-4632-8993-d658c69b2f1d.png)
+
    
  - Set Up Compute Resources for Bastion
 
