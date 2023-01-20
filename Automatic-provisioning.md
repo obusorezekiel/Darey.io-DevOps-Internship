@@ -262,31 +262,45 @@ Then run,
 
 Check the Virtualbox to see if the VMs are up
 
+![image](https://user-images.githubusercontent.com/23356682/213712642-f7831f28-1f2e-4ce5-a397-b30d1be41fe3.png)
+
 
 2. Validate the application from your Chrome Browser
 
 You can validate the application using the Vagrantfile hostname. Visit your browser, and type HTTP://web01. The output will be shown below.
 
+![image](https://user-images.githubusercontent.com/23356682/213712737-559c7b03-caf6-46e6-9e81-06f062efb542.png)
+
 
 The output above shows that the frontend web service works fine. Now, we test the other parts of the web application.
+
+![image](https://user-images.githubusercontent.com/23356682/213712850-fc7e7a95-2589-4298-8aac-104532fb0b3a.png)
 
 
 The Backend service is up and running.
 
 Next, we test the RabbitMQ service.
 
+![image](https://user-images.githubusercontent.com/23356682/213712939-34474879-8910-459c-8c51-25cc2a125ce0.png)
+
 
 Next, we test the Memcached service.
+
+![image](https://user-images.githubusercontent.com/23356682/213712981-4deb67b0-17a1-4951-84e0-8fa6d1ec6a74.png)
 
 
 3. Stopping/Destroying our VMs
 
 To stop the Virtual Machine, we use the following commands.
 
-vagrant halt
+`vagrant halt`
+
 Once we are done, we can destroy the VMs using
 
-vagrant destroy
+`vagrant destroy`
+
+![image](https://user-images.githubusercontent.com/23356682/213713178-06a9ef9b-d039-4111-b188-c4f940e5d533.png)
+
 
 Keep learning and practicing, guys. More projects coming soon.
 
