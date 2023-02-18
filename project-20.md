@@ -245,5 +245,22 @@ Run the container:
  ![Screenshot from 2023-02-18 13-15-34](https://user-images.githubusercontent.com/23356682/219870678-85427280-9a0e-41ae-85e0-84523776e0cd.png)
 
 
+## Practice Task №1 – Implement a POC to migrate the PHP-Todo app into a containerized application.
 
+Download php-todo from repository 
 
+The project below will challenge you a little bit, but the experience there is very valuable for future projects.
+
+### Part 1
+- Write a Dockerfile for the TODO app
+- Run both database and app on your laptop Docker Engine
+- Access the application from the browser
+  
+![Screenshot from 2023-02-18 19-16-24](https://user-images.githubusercontent.com/23356682/219882180-650ad9b6-603a-4ba5-b898-471b69ef9a85.png)
+
+### Part 2
+- Create an account in Docker Hub
+- Create a new Docker Hub repository
+- Push the docker images from your PC to the repository
+  
+![Screenshot from 2023-02-18 19-19-00](https://user-images.githubusercontent.com/23356682/219882200-795eceae-b791-48ad-be6b-8360a6e9ac0f.png)
